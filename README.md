@@ -57,7 +57,7 @@ dotnet format ./online-shop.sln
 
 [Class diagram of Product Service](/Diagrams/ProductServiceClassDiagram.png)
 
-[Data Model Diagram] (/Diagrams/Data Diagram.pdf)
+[Data Model Diagram] (/Diagrams/DataDiagram.png)
 
 
 
