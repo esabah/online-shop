@@ -62,7 +62,7 @@ namespace CustomerMicroserviceUnitTests.Services
         }
 
         [Fact]
-        public void Get_Should_ReturnCorrrectNumberOfElements()
+        public void Get_Should_ReturnCorrectNumberOfElements()
         {
             //Arrange
 

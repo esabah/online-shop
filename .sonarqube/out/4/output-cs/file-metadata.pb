@@ -1,0 +1,15 @@
+d
+[C:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\Business\Dtos\CustomerDto.csutf-8o
+fC:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\Business\Interfaces\ICustomerService.csutf-8n
+eC:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\Business\Mappers\AutoMapperProfiles.csutf-8l
+cC:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\Business\Services\CustomerService.csutf-8i
+`C:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\Controllers\CustomerController.csutf-8e
+\C:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\DataAccess\CustomerContext.csutf-8g
+^C:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\DataAccess\Entities\Customer.csutf-8u
+lC:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\DataAccess\Repositories\CustomerRepository.csutf-8v
+mC:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\DataAccess\Repositories\ICustomerRepository.csutf-8R
+IC:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\Program.csutf-8Å
+vC:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\obj\Debug\net6.0\CustomerMicroservice.GlobalUsings.g.csutf-8â
+~C:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8
+tC:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\obj\Debug\net6.0\CustomerMicroservice.AssemblyInfo.csutf-8ì
+áC:\Projects\Sendeo\Assestment\online-shop\CustomerMicroservice\obj\Debug\net6.0\CustomerMicroservice.MvcApplicationPartsAssemblyInfo.csutf-8

@@ -10,12 +10,10 @@ namespace ProductMicroservice.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
-        private readonly ILogger<ProductController> _logger;
 
-        public ProductController(IProductService productService, ILogger<ProductController> logger)
+        public ProductController(IProductService productService)
         {
             _productService = productService;
-            _logger = logger;
         }
 
         [HttpPost]

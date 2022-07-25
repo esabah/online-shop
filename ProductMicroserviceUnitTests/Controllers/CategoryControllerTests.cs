@@ -19,12 +19,10 @@ namespace ProductMicroserviceUnitTests.Services
 
    
         private readonly Mock<ICategoryService> _categoryService;
-        private readonly Mock<ILogger<CategoryController>> _logger;
 
         public CategoryControllerTests()
         {
             _categoryService = new Mock<ICategoryService>();
-            _logger = new Mock<ILogger<CategoryController>>();
         }
 
         [Fact]
@@ -42,7 +40,7 @@ namespace ProductMicroserviceUnitTests.Services
             _categoryService.Setup(x => x.Create(categoryDto)).Returns(1);
 
 
-            CategoryController controller = new CategoryController(_categoryService.Object,_logger.Object);
+            CategoryController controller = new CategoryController(_categoryService.Object);
 
             //Act
             var result = controller.Create(categoryDto);
@@ -50,7 +48,11 @@ namespace ProductMicroserviceUnitTests.Services
             //Assert
 
             var okResult = result as ObjectResult;
+            Assert.NotNull(okResult);
+
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
             Assert.Equal(200, okResult.StatusCode);
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
         }
     }
 }

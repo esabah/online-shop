@@ -1,0 +1,3 @@
+﻿C:\Projects\Sendeo\Assestment\online-shop\docker-compose.override.yml
+C:\Projects\Sendeo\Assestment\online-shop\docker-compose.yml
+C:\Projects\Sendeo\Assestment\online-shop\.dockerignore

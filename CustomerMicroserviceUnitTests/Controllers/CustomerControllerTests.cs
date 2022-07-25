@@ -22,12 +22,10 @@ namespace CustomerMicroserviceUnitTests.Services
 
    
         private readonly Mock<ICustomerService> _customerService;
-        private readonly Mock<ILogger<CustomerController>> _logger;
 
         public CustomerControllerTests()
         {
             _customerService = new Mock<ICustomerService>();
-            _logger = new Mock<ILogger<CustomerController>>();
         }
 
         [Fact]
@@ -46,7 +44,7 @@ namespace CustomerMicroserviceUnitTests.Services
             _customerService.Setup(x => x.Create(customerDto)).Returns(1);
 
 
-            CustomerController controller = new CustomerController(_customerService.Object,_logger.Object);
+            CustomerController controller = new CustomerController(_customerService.Object);
 
             //Act
             var result = controller.Create(customerDto);
@@ -54,7 +52,10 @@ namespace CustomerMicroserviceUnitTests.Services
             //Assert
 
             var okResult = result as ObjectResult;
+            Assert.NotNull(okResult);
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
             Assert.Equal(200, okResult.StatusCode);
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
         }
 
         [Fact]
@@ -70,16 +71,19 @@ namespace CustomerMicroserviceUnitTests.Services
 
             _customerService.Setup(x => x.GetAll()).Returns(customerList);
 
-            CustomerController controller = new CustomerController(_customerService.Object, _logger.Object);
+            CustomerController controller = new CustomerController(_customerService.Object);
 
             //Act
 
             var result = controller.GetAll();
 
             //Assert
-            var res = result.Result as ObjectResult;
 
+            var res = result.Result as ObjectResult;
+            Assert.NotNull(res);
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
             Assert.Equal(200,res.StatusCode);
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
         }
     }
 }

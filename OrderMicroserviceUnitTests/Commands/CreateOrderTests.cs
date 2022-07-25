@@ -21,7 +21,6 @@ namespace OrderMicroserviceUnitTests.Commands
         private readonly Mock<ICustomerViewRepository> _customerViewRepository;
         private readonly Mock<IProductViewRepository> _productViewRepository;
         private readonly Mock<IPublishEndpoint> _publishEndpoint;
-        private readonly Mock<ILogger<CreateOrderCommandHandler>> _logger;
         private readonly IMapper _mapper;
 
 
@@ -31,7 +30,6 @@ namespace OrderMicroserviceUnitTests.Commands
             _customerViewRepository = new Mock<ICustomerViewRepository>();
             _productViewRepository = new Mock<IProductViewRepository>();
             _publishEndpoint =new Mock<IPublishEndpoint>();
-            _logger = new Mock<ILogger<CreateOrderCommandHandler>>();
             _mapper = AutoMapperConfig.getMapper();
         }
 
@@ -70,7 +68,7 @@ namespace OrderMicroserviceUnitTests.Commands
 
             _orderRepository.Setup(x => x.Create(It.IsAny<Order>())).Returns(resultOrder);
 
-            CreateOrderCommandHandler handler = new CreateOrderCommandHandler(_orderRepository.Object,_customerViewRepository.Object,_productViewRepository.Object,_mapper,_logger.Object,_publishEndpoint.Object);
+            CreateOrderCommandHandler handler = new CreateOrderCommandHandler(_orderRepository.Object,_customerViewRepository.Object,_productViewRepository.Object,_mapper,_publishEndpoint.Object);
 
             //Act
             var result = handler.Handle(orderCommand, new System.Threading.CancellationToken()).GetAwaiter().GetResult();

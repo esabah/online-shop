@@ -1,0 +1,5 @@
+﻿C:\Projects\Sendeo\Assestment\online-shop\Common\DataAccess\Repository\IRepository.cs
+C:\Projects\Sendeo\Assestment\online-shop\Common\DataAccess\Repository\RepositoryBase.cs
+C:\Projects\Sendeo\Assestment\online-shop\Common\MessageQueue\EventMessages\CustomerCreateEvent.cs
+C:\Projects\Sendeo\Assestment\online-shop\Common\MessageQueue\EventMessages\OrderCreateEvent.cs
+C:\Projects\Sendeo\Assestment\online-shop\Common\MessageQueue\EventMessages\ProductCreateEvent.cs

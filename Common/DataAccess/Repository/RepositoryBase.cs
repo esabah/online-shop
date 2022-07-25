@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,7 +35,12 @@ namespace Common.Repository
 
         public T GetById(int id)
         {
-            return _dbContext.Set<T>().Find(id);
+            var entity = _dbContext.Set<T>().Find(id);
+            if (entity == null)
+            {
+                throw new ArgumentException($"Object not found with Id {id}");
+            }
+            else return entity;
         }
 
         public T Update(T entity)

@@ -15,14 +15,12 @@ namespace OrderMicroserviceUnitTests.Commands
     public class CreateOrderViewTests
     {
         private readonly Mock<IOrderViewRepository> _orderViewRepository;
-        private readonly Mock<ILogger<CreateOrderViewCommandHandler>> _logger;
         private readonly IMapper _mapper;
 
 
         public CreateOrderViewTests()
         {
             _orderViewRepository = new Mock<IOrderViewRepository>();
-            _logger = new Mock<ILogger<CreateOrderViewCommandHandler>>();
             _mapper = AutoMapperConfig.getMapper();
         }
 
@@ -45,7 +43,7 @@ namespace OrderMicroserviceUnitTests.Commands
 
 
 
-            CreateOrderViewCommandHandler handler = new CreateOrderViewCommandHandler(_orderViewRepository.Object, _mapper, _logger.Object);
+            CreateOrderViewCommandHandler handler = new CreateOrderViewCommandHandler(_orderViewRepository.Object);
 
             //Act
             var result = handler.Handle(order, new System.Threading.CancellationToken()).GetAwaiter().GetResult();

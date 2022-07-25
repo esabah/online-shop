@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.0.0.0",
+        "fileVersion": "4.0.0-6.21526.21 (c7d6f9fa)",
+        "semanticVersion": "4.0.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/Sendeo/Assestment/online-shop/ProductMicroserviceUnitTests/Controllers/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 31,
+                  "endLine": 54,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/Sendeo/Assestment/online-shop/ProductMicroserviceUnitTests/Controllers/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 31,
+                  "endLine": 54,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/Sendeo/Assestment/online-shop/ProductMicroserviceUnitTests/Controllers/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 30,
+                  "endLine": 82,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Dereference of a possibly null reference.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

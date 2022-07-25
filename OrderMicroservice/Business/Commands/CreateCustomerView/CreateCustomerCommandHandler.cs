@@ -8,14 +8,10 @@ namespace OrderMicroservice.Business.Commands.CreateCustomer
     public class CreateCustomerCommandHandler : IRequestHandler<CreateCustomerCommand, int>
     {
         private readonly ICustomerViewRepository _customerViewRepository;
-        private readonly IMapper _mapper;
-        private readonly ILogger<CreateCustomerCommandHandler> _logger;
 
-        public CreateCustomerCommandHandler(ICustomerViewRepository customerViewRepository, IMapper mapper, ILogger<CreateCustomerCommandHandler> logger)
+        public CreateCustomerCommandHandler(ICustomerViewRepository customerViewRepository, IMapper mapper)
         {
             _customerViewRepository = customerViewRepository;
-            _mapper = mapper;
-            _logger = logger;
         }
 
         public async Task<int> Handle(CreateCustomerCommand request, CancellationToken cancellationToken)

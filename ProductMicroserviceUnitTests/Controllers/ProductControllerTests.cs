@@ -19,12 +19,10 @@ namespace ProductMicroserviceUnitTests.Services
 
    
         private readonly Mock<IProductService> _productService;
-        private readonly Mock<ILogger<ProductController>> _logger;
 
         public ProductControllerTests()
         {
             _productService = new Mock<IProductService>();
-            _logger = new Mock<ILogger<ProductController>>();
         }
 
         [Fact]
@@ -42,7 +40,7 @@ namespace ProductMicroserviceUnitTests.Services
             _productService.Setup(x => x.Create(productDto)).Returns(1);
 
 
-            ProductController controller = new ProductController(_productService.Object,_logger.Object);
+            ProductController controller = new ProductController(_productService.Object);
 
             //Act
             var result = controller.Create(productDto);
@@ -50,7 +48,11 @@ namespace ProductMicroserviceUnitTests.Services
             //Assert
 
             var okResult = result as ObjectResult;
+            Assert.NotNull(okResult);
+
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
             Assert.Equal(200, okResult.StatusCode);
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
         }
 
         [Fact]
@@ -66,7 +68,7 @@ namespace ProductMicroserviceUnitTests.Services
 
             _productService.Setup(x => x.GetAll()).Returns(productList);
 
-            ProductController controller = new ProductController(_productService.Object, _logger.Object);
+            ProductController controller = new ProductController(_productService.Object);
 
             //Act
 
@@ -75,7 +77,10 @@ namespace ProductMicroserviceUnitTests.Services
             //Assert
             var res = result.Result as ObjectResult;
 
+            Assert.NotNull(res);
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
             Assert.Equal(200,res.StatusCode);
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
         }
     }
 }

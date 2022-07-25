@@ -19,13 +19,11 @@ namespace OrderMicroserviceUnitTests.Consumers
     public class OrderViewCreateEventConsumerTests
     {
         private readonly Mock<IMediator> _mediator;
-        private readonly Mock<ILogger<OrderViewCreateEventConsumer>> _logger;
         private readonly IMapper _mapper;
 
         public OrderViewCreateEventConsumerTests()
         {
             _mediator = new Mock<IMediator>();
-            _logger = new Mock<ILogger<OrderViewCreateEventConsumer>>();
             _mapper = AutoMapperConfig.getMapper();
         }
 
@@ -43,7 +41,7 @@ namespace OrderMicroserviceUnitTests.Consumers
 
             _mediator.Setup(x => x.Send(It.IsAny<CreateOrderViewCommand>(), It.IsAny<CancellationToken>()));
 
-            OrderViewCreateEventConsumer consumer = new OrderViewCreateEventConsumer(_mediator.Object, _mapper, _logger.Object);
+            OrderViewCreateEventConsumer consumer = new OrderViewCreateEventConsumer(_mediator.Object, _mapper);
 
             var context = Mock.Of<ConsumeContext<OrderCreateEvent>>(_ =>_.Message == eventMessage);
 

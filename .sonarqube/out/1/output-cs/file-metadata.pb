@@ -1,0 +1,9 @@
+^
+UC:\Projects\Sendeo\Assestment\online-shop\Common\DataAccess\Repository\IRepository.csutf-8a
+XC:\Projects\Sendeo\Assestment\online-shop\Common\DataAccess\Repository\RepositoryBase.csutf-8k
+bC:\Projects\Sendeo\Assestment\online-shop\Common\MessageQueue\EventMessages\CustomerCreateEvent.csutf-8h
+_C:\Projects\Sendeo\Assestment\online-shop\Common\MessageQueue\EventMessages\OrderCreateEvent.csutf-8j
+aC:\Projects\Sendeo\Assestment\online-shop\Common\MessageQueue\EventMessages\ProductCreateEvent.csutf-8e
+ZC:\Projects\Sendeo\Assestment\online-shop\Common\obj\Debug\net6.0\Common.GlobalUsings.g.csutf-8{
+pC:\Projects\Sendeo\Assestment\online-shop\Common\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8c
+XC:\Projects\Sendeo\Assestment\online-shop\Common\obj\Debug\net6.0\Common.AssemblyInfo.csutf-8

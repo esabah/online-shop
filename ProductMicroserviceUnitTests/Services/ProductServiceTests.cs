@@ -83,7 +83,7 @@ namespace ProductMicroserviceUnitTests.Services
 
             //Assert
 
-            Assert.Equal(productList.Count(), sut.Count());
+            Assert.Equal(productList.ToList().Count, sut.Count());
         }
     }
 }

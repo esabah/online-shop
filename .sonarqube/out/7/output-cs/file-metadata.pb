@@ -1,0 +1,14 @@
+a
+XC:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\AutoMapperConfig.csutf-8q
+hC:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\Commands\CreateCustomerViewTests.csutf-8j
+aC:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\Commands\CreateOrderTests.csutf-8n
+eC:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\Commands\CreateOrderViewTests.csutf-8p
+gC:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\Commands\CreateProductViewTests.csutf-8{
+rC:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\Consumers\CustomerCreateEventConsumerTests.csutf-8|
+sC:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\Consumers\OrderViewCreateEventConsumerTests.csutf-8z
+qC:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\Consumers\ProductCreateEventConsumerTests.csutf-8q
+hC:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\Controllers\OrderControllerTests.csutf-8g
+^C:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\Queries\GetOrdersTests.csutf-8~
+sC:\Users\ercan\.nuget\packages\microsoft.net.test.sdk\16.11.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.csutf-8ê
+ÑC:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8å
+ÄC:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\obj\Debug\net6.0\OrderMicroserviceUnitTests.AssemblyInfo.csutf-8

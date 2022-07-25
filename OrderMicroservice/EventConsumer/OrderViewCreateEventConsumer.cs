@@ -13,13 +13,11 @@ namespace OrderMicroservice.MessageConsumer
 
         private readonly IMediator _mediator;
         private readonly IMapper _mapper;
-        private readonly ILogger<OrderViewCreateEventConsumer> _logger;
 
-        public OrderViewCreateEventConsumer(IMediator mediator, IMapper mapper, ILogger<OrderViewCreateEventConsumer> logger)
+        public OrderViewCreateEventConsumer(IMediator mediator, IMapper mapper)
         {
             _mediator = mediator;
             _mapper = mapper;
-            _logger = logger;
         }
 
         public async Task Consume(ConsumeContext<OrderCreateEvent> context)

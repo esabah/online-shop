@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>OrderMicroserviceUnitTests</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Test</ProjectType>
+  <ProjectGuid>762ee61c-5d6d-4769-b9ce-e59b8d2b23b1</ProjectGuid>
+  <FullPath>C:\Projects\Sendeo\Assestment\online-shop\OrderMicroserviceUnitTests\OrderMicroserviceUnitTests.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="C:\Projects\Sendeo\Assestment\online-shop\.sonarqube\conf\7\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Projects\Sendeo\Assestment\online-shop\.sonarqube\out\7\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Projects\Sendeo\Assestment\online-shop\.sonarqube\out\7</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net6.0</TargetFramework>
+</ProjectInfo>

@@ -19,13 +19,11 @@ namespace OrderMicroserviceUnitTests.Consumers
     public class ProductCreateEventConsumerTests
     {
         private readonly Mock<IMediator> _mediator;
-        private readonly Mock<ILogger<ProductCreateEventConsumer>> _logger;
         private readonly IMapper _mapper;
 
         public ProductCreateEventConsumerTests()
         {
             _mediator = new Mock<IMediator>();
-            _logger = new Mock<ILogger<ProductCreateEventConsumer>>();
             _mapper = AutoMapperConfig.getMapper();
         }
 
@@ -43,7 +41,7 @@ namespace OrderMicroserviceUnitTests.Consumers
 
             _mediator.Setup(x => x.Send(It.IsAny<CreateProductCommand>(), It.IsAny<CancellationToken>()));
 
-            ProductCreateEventConsumer consumer = new ProductCreateEventConsumer(_mediator.Object, _mapper, _logger.Object);
+            ProductCreateEventConsumer consumer = new ProductCreateEventConsumer(_mediator.Object, _mapper);
 
             var context = Mock.Of<ConsumeContext<ProductCreateEvent>>(_ =>_.Message == eventMessage);
 

@@ -9,14 +9,10 @@ namespace OrderMicroservice.Business.Commands.CreateORderView
     public class CreateOrderViewCommandHandler  :  IRequestHandler<CreateOrderViewCommand, int>
     {
         private readonly IOrderViewRepository _orderQueryRepository;
-        private readonly IMapper _mapper;
-        private readonly ILogger<CreateOrderViewCommandHandler> _logger;
 
-        public CreateOrderViewCommandHandler(IOrderViewRepository orderQueryRepository, IMapper mapper, ILogger<CreateOrderViewCommandHandler> logger)
+        public CreateOrderViewCommandHandler(IOrderViewRepository orderQueryRepository)
         {
             _orderQueryRepository = orderQueryRepository;
-            _mapper = mapper;
-            _logger = logger;
         }
 
         public async Task<int> Handle(CreateOrderViewCommand request, CancellationToken cancellationToken)

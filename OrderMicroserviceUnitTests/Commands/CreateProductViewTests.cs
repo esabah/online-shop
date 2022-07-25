@@ -13,14 +13,12 @@ namespace OrderMicroserviceUnitTests.Commands
     public class CreateProductViewTests
     {
         private readonly Mock<IProductViewRepository> _productViewRepository;
-        private readonly Mock<ILogger<CreateProductCommandHandler>> _logger;
         private readonly IMapper _mapper;
 
 
         public CreateProductViewTests()
         {
             _productViewRepository = new Mock<IProductViewRepository>();
-            _logger = new Mock<ILogger<CreateProductCommandHandler>>();
             _mapper = AutoMapperConfig.getMapper();
         }
 
@@ -44,7 +42,7 @@ namespace OrderMicroserviceUnitTests.Commands
 
 
 
-            CreateProductCommandHandler handler = new CreateProductCommandHandler(_productViewRepository.Object, _mapper, _logger.Object);
+            CreateProductCommandHandler handler = new CreateProductCommandHandler(_productViewRepository.Object);
 
             //Act
             var result = handler.Handle(product, new System.Threading.CancellationToken()).GetAwaiter().GetResult();

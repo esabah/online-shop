@@ -16,13 +16,11 @@ namespace OrderMicroserviceUnitTests.Queries
     public class GetOrdersTests
     {
         private readonly Mock<IOrderViewRepository> _orderQueryRepository;
-        private readonly IMapper _mapper;
 
 
         public GetOrdersTests()
         {
             _orderQueryRepository = new Mock<IOrderViewRepository>();
-            _mapper = AutoMapperConfig.getMapper();
         }
 
         [Fact]
@@ -48,7 +46,7 @@ namespace OrderMicroserviceUnitTests.Queries
             
             _orderQueryRepository.Setup(x => x.GetOrdersByDate(queryStartDate, queryEndDate)).Returns(Task.FromResult(orderList.ToList()));
 
-            GetOrdersHandler handler = new GetOrdersHandler(_orderQueryRepository.Object, _mapper);
+            GetOrdersHandler handler = new GetOrdersHandler(_orderQueryRepository.Object);
 
             //Act
 
@@ -56,7 +54,7 @@ namespace OrderMicroserviceUnitTests.Queries
 
             //Assert
 
-            Assert.Equal(5, result.Count());
+            Assert.Equal(5, result.ToList().Count);
         }
 
 

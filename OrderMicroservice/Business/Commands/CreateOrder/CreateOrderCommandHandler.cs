@@ -15,16 +15,14 @@ namespace OrderMicroservice.Business.Commands.CreateOrder
         private readonly ICustomerViewRepository _customerViewRepository;
         private readonly IProductViewRepository _productViewRepository;
         private readonly IMapper _mapper;
-        private readonly ILogger<CreateOrderCommandHandler> _logger;
         private readonly IPublishEndpoint _publishEndpoint;
 
-        public CreateOrderCommandHandler(IOrderRepository orderRepository, ICustomerViewRepository customerViewRepository, IProductViewRepository productViewRepository, IMapper mapper, ILogger<CreateOrderCommandHandler> logger, IPublishEndpoint publishEndpoint)
+        public CreateOrderCommandHandler(IOrderRepository orderRepository, ICustomerViewRepository customerViewRepository, IProductViewRepository productViewRepository, IMapper mapper, IPublishEndpoint publishEndpoint)
         {
             _orderRepository = orderRepository;
             _customerViewRepository = customerViewRepository;
             _productViewRepository = productViewRepository;
             _mapper = mapper;
-            _logger = logger;
             _publishEndpoint = publishEndpoint;
         }
 
@@ -36,7 +34,7 @@ namespace OrderMicroservice.Business.Commands.CreateOrder
                orderEntity.OrderDetails = _mapper.Map<ICollection<OrderDetailDto>, ICollection<OrderDetail>>(request.OrderDetails);
 
             var customerDetail = _customerViewRepository.GetById(orderEntity.CustomerId);
-            validateConsistancy(customerDetail, orderEntity);
+            ValidateConsistency(customerDetail, orderEntity);
 
             orderEntity.Status = "Created";
             var newOrder =  _orderRepository.Create(orderEntity);
@@ -44,7 +42,7 @@ namespace OrderMicroservice.Business.Commands.CreateOrder
 
             // Send created order info to rabbitMq for update query db.
              
-           await _publishEndpoint.Publish<OrderCreateEvent>(BuildMessage(customerDetail , newOrder));
+           await _publishEndpoint.Publish<OrderCreateEvent>(BuildMessage(customerDetail , newOrder),new CancellationToken());
 
             return newOrder.Id;
         }
@@ -63,7 +61,7 @@ namespace OrderMicroservice.Business.Commands.CreateOrder
             return orderCreateEvent;
         }
 
-        private void validateConsistancy(CustomerView customerDetail, Order orderEntity)
+        private void ValidateConsistency(CustomerView customerDetail, Order orderEntity)
         {
             if (customerDetail == null)
             {

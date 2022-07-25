@@ -6,7 +6,7 @@ namespace OrderMicroservice.DataAccess.Repositories
     public class ProductViewRepository : RepositoryBase<ProductView>, IProductViewRepository
     {
 
-        private ViewContext _queryContext;
+        private readonly ViewContext _queryContext;
         public ProductViewRepository(ViewContext queryContext) : base(queryContext)
         {
             _queryContext = queryContext;

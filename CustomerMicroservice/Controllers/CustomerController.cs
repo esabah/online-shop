@@ -10,13 +10,10 @@ namespace CustomerMicroservice.Controllers
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerService _customerService;
-        private readonly ILogger<CustomerController> _logger;
 
-
-        public CustomerController(ICustomerService customerService, ILogger<CustomerController> logger)
+        public CustomerController(ICustomerService customerService)
         {
             this._customerService = customerService;
-            this._logger = logger;
         }
 
         [HttpPost]
