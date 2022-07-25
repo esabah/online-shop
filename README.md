@@ -50,13 +50,14 @@ dotnet format ./online-shop.sln
 ```
 # Diagrams
 
-[Class diagram of Customer Service](Diagrams\CustomerServiceClassDiagram.png)
 
-[Class diagram of Order Service](\Diagrams\OrderServiceClassDiagram.png)
+[Class diagram of Customer Service](/Diagrams/CustomerServiceClassDiagram.png)
 
-[Class diagram of Product Service](\Diagrams\ProductServiceClassDiagram.png)
+[Class diagram of Order Service](/Diagrams/OrderServiceClassDiagram.png)
 
-[Data Model Diagram](\Diagrams\Data Diagram.pdf)
+[Class diagram of Product Service](/Diagrams/ProductServiceClassDiagram.png)
+
+[Data Model Diagram] (/Diagrams/Data Diagram.pdf)
 
 
 
