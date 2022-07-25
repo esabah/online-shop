@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProductMicroservice.Controllers.ProductController">
+    <Position X="1.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAIAAAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ProductController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductMicroservice.Business.Services.ProductService">
+    <Position X="4.75" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAABAAAAAAAAAEAAAgBAAAAAAAA=</HashCode>
+      <FileName>Business\Services\ProductService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProductMicroservice.DataAccess.Repositories.ProductRepository">
+    <Position X="7.75" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\Repositories\ProductRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Common.Repository.RepositoryBase&lt;T&gt;">
+    <Position X="13.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProductMicroservice.DataAccess.Entities.Category">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\Entities\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductMicroservice.DataAccess.Entities.Product">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAgAAAAAAAAAAQAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>DataAccess\Entities\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductMicroservice.DataAccess.ProductContext">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>DataAccess\ProductContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.MessageQueue.EventMessages.ProductCreateEvent">
+    <Position X="4.75" Y="5.5" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="ProductMicroservice.Business.Interfaces.IProductService">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>Business\Interfaces\IProductService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProductMicroservice.DataAccess.Repositories.IProductRepository">
+    <Position X="7.75" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\Repositories\IProductRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Common.Repository.IRepository&lt;TEntity&gt;">
+    <Position X="11" Y="0.75" Width="2.25" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

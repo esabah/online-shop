@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+
+  customer-microservice:
+    image: ${DOCKER_REGISTRY-}customer-microservice
+    build:
+      context: .
+      dockerfile: CustomerMicroservice/Dockerfile
+  product-microservice:
+    image: ${DOCKER_REGISTRY-}product-microservice
+    build:
+      context: .
+      dockerfile: ProductMicroservice/Dockerfile
+  order-microservice:
+    image: ${DOCKER_REGISTRY-}order-microservice
+    build:
+      context: .
+      dockerfile: OrderMicroservice/Dockerfile

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Common.MessageQueue.EventMessages.OrderCreateEvent">
+    <Position X="10.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.MessageQueue.EventMessages.OrderDetailCreateEvent">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Common.Repository.RepositoryBase&lt;T&gt;" Collapsed="true">
+    <Position X="10" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.Controllers.OrderController">
+    <Position X="0.5" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAEAA=</HashCode>
+      <FileName>Controllers\OrderController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderMicroservice.Business.Commands.CreateCustomer.CreateCustomerCommandHandler">
+    <Position X="3.75" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAIAAAABIAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\Commands\CreateCustomerView\CreateCustomerCommandHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.Business.Commands.CreateCustomer.CreateCustomerCommand">
+    <Position X="7.5" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\Commands\CreateCustomerView\CreateCustomerCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.Business.Commands.CreateOrder.CreateOrderCommand">
+    <Position X="12.5" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAUAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\Commands\CreateOrder\CreateOrderCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.Business.Commands.CreateOrder.CreateOrderCommandHandler">
+    <Position X="10" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAASAIAAAEBIAAABAABAAAAA=</HashCode>
+      <FileName>Business\Commands\CreateOrder\CreateOrderCommandHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.Business.Commands.CreateOrderView.CreateOrderViewCommand">
+    <Position X="7.25" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\Commands\CreateOrderView\CreateOrderViewCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.Business.Commands.CreateORderView.CreateOrderViewCommandHandler">
+    <Position X="3.75" Y="3.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAABAAAAIAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\Commands\CreateOrderView\CreateOrderViewCommandHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.Business.Commands.CreateProduct.CreateProductCommand">
+    <Position X="7" Y="6.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\Commands\CreateProductView\CreateProductCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.Business.Commands.CreateProduct.CreateProductCommandHandler">
+    <Position X="3.75" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAIAAAEAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\Commands\CreateProductView\CreateProductCommandHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.Business.Queries.QueryOrders.GetOrdersHandler">
+    <Position X="3.75" Y="9" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAABAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\Queries\QueryOrders\GetOrdersHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.Business.Queries.QueryOrders.GetOrdersQuery">
+    <Position X="7" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Business\Queries\QueryOrders\GetOrdersQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.DataAccess.Repositories.OrderRepository" Collapsed="true">
+    <Position X="3.75" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\Repositories\OrderRepositories\OrderRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.DataAccess.Repositories.CustomerViewRepository" Collapsed="true">
+    <Position X="0.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\Repositories\ViewRepositories\CustomerViewRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.DataAccess.Repositories.ProductViewRepository" Collapsed="true">
+    <Position X="6.75" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\Repositories\ViewRepositories\ProductViewRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.DataAccess.Repositories.OrderViewRepository" Collapsed="true">
+    <Position X="9" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAEAA=</HashCode>
+      <FileName>DataAccess\Repositories\ViewRepositories\OrderViewRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.MessageConsumer.CustomerCreateEventConsumer">
+    <Position X="10.5" Y="9" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAIAAAAAAAAAAABAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventConsumer\CustomerCreateEventConsumer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.MessageConsumer.OrderViewCreateEventConsumer">
+    <Position X="14" Y="9" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAIAAAAAAAAAAABAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventConsumer\OrderViewCreateEventConsumer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OrderMicroservice.MessageConsumer.ProductCreateEventConsumer">
+    <Position X="18" Y="9" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAIAAAAAAAAAAABAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventConsumer\ProductCreateEventConsumer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Common.Repository.IRepository&lt;TEntity&gt;" Collapsed="true">
+    <Position X="2.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="OrderMicroservice.DataAccess.Repositories.IOrderRepository" Collapsed="true">
+    <Position X="3.75" Y="16.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\Repositories\OrderRepositories\IOrderRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OrderMicroservice.DataAccess.Repositories.ICustomerViewRepository" Collapsed="true">
+    <Position X="0.75" Y="16.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\Repositories\ViewRepositories\ICustomerViewRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OrderMicroservice.DataAccess.Repositories.IProductViewRepository" Collapsed="true">
+    <Position X="6.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\Repositories\ViewRepositories\IProductViewRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OrderMicroservice.DataAccess.Repositories.IOrderViewRepository" Collapsed="true">
+    <Position X="8.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>DataAccess\Repositories\ViewRepositories\IOrderViewRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
