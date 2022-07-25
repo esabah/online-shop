@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProductMicroservice.DataAccess.Entities
 {
@@ -10,7 +11,10 @@ namespace ProductMicroservice.DataAccess.Entities
         [MaxLength(255)]
         public string? Description { get; set; }
         public decimal Price { get; set; }
+        [ForeignKey("CategoryId")]
         public Category Category { get; set; } = null!;
+        [Required]
+        public int CategoryId { get; set; }
 
     }
 }
