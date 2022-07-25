@@ -1,3 +1,4 @@
+![example workflow](https://github.com/esabah/online-shop/actions/workflows/dotnet.yml/badge.svg)
 
 # Online Shop  - Assesment Project
 Including 3 services : Customer, Product and Order.
@@ -57,7 +58,7 @@ dotnet format ./online-shop.sln
 
 [Class diagram of Product Service](/Diagrams/ProductServiceClassDiagram.png)
 
-[Data Model Diagram] (/Diagrams/DataDiagram.png)
+[Data Model Diagram](/Diagrams/DataDiagram.png)
 
 
 
